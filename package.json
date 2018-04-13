@@ -1,11 +1,16 @@
 {
   "name": "EconPro",
   "version": "1.0.0",
+  "main": "./app/main.js",
   "scripts": {
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run server\" ",
     "server": "node node_modules/ng2f-server/server.js",
     "tsc": "tsc",
     "tsc:w": "tsc -w"
+  },
+  "engines": {
+    "node": "~9.5.0",
+    "npm": "~5.8"
   },
   "keywords": [
     "EconPro"
@@ -15,6 +20,7 @@
   "dependencies": {
     "@angular/animations": "^5.2.9",
     "@angular/common": "^5.2.9",
+    "@angular/cli": "^6.0.0-rc.4",
     "@angular/compiler": "^5.2.9",
     "@angular/compiler-cli": "^5.2.9",
     "@angular/core": "^5.2.9",
@@ -28,6 +34,7 @@
     "bootstrap": "^4.0.0",
     "core-js": "^2.5.4",
     "express": "^4.16.3",
+    "webpack": "^4.4.1",
     "ng2f-bootstrap": "^0.0.4",
     "ng2f-server": "^1.0.0",
     "rxjs": "^5.5.8",
@@ -35,7 +42,6 @@
     "zone.js": "^0.8.20"
   },
   "devDependencies": {
-    "@angular/cli": "^6.0.0-rc.4",
     "@ng-bootstrap/ng-bootstrap": "^1.1.0",
     "@types/core-js": "0.9.34",
     "@types/jasmine": "^2.8.6",
